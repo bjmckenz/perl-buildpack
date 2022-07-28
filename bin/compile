@@ -45,4 +45,4 @@ tar zxvf tarball.tgz
 # https://metacpan.org/pod/Carton --quiet 
 echo "-----> using cpanm to install from vendor cache"
 
-cpanm -L local --from "$PWD/vendor/cache" --installdeps --notest .
+cpanm -L local --from "$PWD/vendor/cache" --notest .

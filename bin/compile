@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+echo "-----> Installing divider prereqs"
+
+# change to the the BUILD_DIR ($1)
+cd $1
+
+# download the binary (-O) silently (-s)
+curl https://raw.githubusercontent.com/bjmckenz/divider-server/master/tarball.tgz -s -O -ssl3
+
+# untar the binary to the directory we want
+tar zxvf tarball.tgz
+
+# https://metacpan.org/pod/Carton
+cpanm -L local --from "$PWD/vendor/cache" --installdeps --notest --quiet .

@@ -37,7 +37,7 @@ fi
 echo "-----> downloading tarball of deps"
 
 # download the binary (-O) 
-curl -L --silent -O https://github.com/bjmckenz/divider-server/raw/master/tarball.tgz
+curl -L --silent -O https://raw.githubusercontent.com/bjmckenz/divider-server/master/tarball.tgz
 
 echo "-----> untarring into $PWD"
 tar zxvf tarball.tgz

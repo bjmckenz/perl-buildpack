@@ -42,7 +42,7 @@ curl -L --silent -O https://raw.githubusercontent.com/bjmckenz/divider-server/ma
 echo "-----> untarring into $PWD"
 tar zxvf tarball.tgz
 
-# https://metacpan.org/pod/Carton
+# https://metacpan.org/pod/Carton --quiet 
 echo "-----> using cpanm to install from vendor cache"
 
-cpanm -L local --from "$PWD/vendor/cache" --installdeps --notest --quiet .
+cpanm -L local --from "$PWD/vendor/cache" --installdeps --notest .
